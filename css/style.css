@@ -1,27 +1,32 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Charm&subset=latin-ext');
 
 * {
 	box-sizing: border-box;
 }
 
-.body {
+body {
 	margin: 0 auto;
-	bac
+	height: 100%;
+	background: rgb(0, 0, 0);
 }
 
 header {
 	width: 100%;
-	min-height: 15%;
+	max-height: 20vh;
 	padding-top: 5%;
 	padding-bottom: 5%;
 }
 
 .navbar {
-	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.2);
 	font-family: 'Charm', cursive;
 	font-weight: 300;
 	font-size: 3rem;
+}
+
+.nav {
+	flex-direction: row;
+	width: 70%;
 }
 
 .navbar__item {
@@ -36,6 +41,22 @@ header {
 
 a:hover {
   color: rgb(193, 96, 0);
+  text-decoration: none;
+  background: rgb(193, 96, 0) -webkit-gradient(linear, 100% 0, 0 0, from(rgb(193, 96, 0)), color-stop(0.5, rgb(249, 199, 117)), to(rgb(249, 199, 117)));
+  background-position: -4rem top; /*50px*/
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation-name: shimmer;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-background-size: 4rem 100%; /*50px*/
+
+}
+
+a:active {
+  color: rgb(193, 96, 0);
+  text-decoration: none;
   background: rgb(193, 96, 0) -webkit-gradient(linear, 100% 0, 0 0, from(rgb(193, 96, 0)), color-stop(0.5, rgb(249, 199, 117)), to(rgb(249, 199, 117)));
   background-position: -4rem top; /*50px*/
   background-repeat: no-repeat;
@@ -61,3 +82,21 @@ a:hover {
         background-position: 12.5rem top; /*200px*/
     }
 }
+
+main, section, div {
+	margin-top: 0;
+}
+
+.content {
+	min-height: 80%;
+}
+
+.jumbotron {
+	background-image: url('../images/for_web/violet_wall.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 1100px;
+}
+
+/*@media
+margin-top: 10%;*/
