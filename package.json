@@ -1,0 +1,14 @@
+{
+  "name": "patrycja",
+  "version": "1.0.0",
+  "description": "dance website",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "bellydance"
+  ],
+  "author": "aleksandrachmurka",
+  "license": "ISC"
+}
