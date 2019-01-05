@@ -66,7 +66,6 @@ a:active {
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   -webkit-background-size: 4rem 100%; /*50px*/
-
 }
 
 @-webkit-keyframes shimmer {
@@ -100,3 +99,27 @@ main, section, div {
 
 /*@media
 margin-top: 10%;*/
+.overlay {
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 48%;
+	height: 40%;
+	font-family: 'Charm', cursive;
+	font-weight: 300;
+	text-align: center;
+	position: relative;
+}
+
+h1 {
+	padding: 5%;
+	font-size: 8em;
+	color: rgb(193, 96, 0);
+	background: rgb(193, 96, 0) -webkit-gradient(linear, 10% 0, 0 0, from(rgb(193, 96, 0)), color-stop(0.5, rgb(242, 169, 101)), to(rgb(249, 199, 117)));
+  	background-repeat: repeat;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	-webkit-animation-name: shimmer;
+  	-webkit-animation-duration: 3s;
+  	-webkit-animation-iteration-count: infinite;
+  	-webkit-background-size: 25rem 50%; /*50px*/
+}
+
