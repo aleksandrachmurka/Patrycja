@@ -97,7 +97,7 @@ main, section, div {
 	background-color: rgba(0, 0, 0, 0.2);
 	width: 40%;
 	height: 40%;
-	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	font-family: 'Charm', cursive;
 	font-weight: 100;
 	text-align: center;
 	position: relative;
@@ -105,7 +105,7 @@ main, section, div {
 
 h1 {
 	padding: 5%;
-	font-size: 5em;
+	font-size: 6em;
 	display: inline-block;
 	color: rgb(193, 96, 0);
 	background: rgb(193, 96, 0) -webkit-gradient(linear, 10% 0, 0 0, from(rgb(193, 96, 0)), color-stop(0.5, rgb(242, 169, 101)), to(rgb(249, 199, 117)));
