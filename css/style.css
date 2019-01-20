@@ -98,7 +98,7 @@ main, section, div {
 	margin-top: 5%;
 }
 
-h1 {
+h1, h2 {
 	padding: 5%;
 	font-size: 6em;
 	display: inline-block;
@@ -114,18 +114,32 @@ h1 {
   	-webkit-background-size: 13rem 20%; /*50px*/
 }
 
+
+
 @media screen and (max-width: 930px) {
 	h1 {
+		font-size: 4em;
+	}
+
+	h2 {
 		font-size: 4em;
 	}
 
 	.navbar {
 		font-size: 2em;
 	}
+
+	.contact-details {
+		font-size: 2em;
+	}
 }
 
 @media screen and (max-width: 420px) {
 	h1 {
+		font-size: 2em;
+	}
+
+	h2 {
 		font-size: 2em;
 	}
 
