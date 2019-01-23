@@ -42,9 +42,10 @@ header {
 	height: 50%;
 	width: 100%;
 	white-space: nowrap;
+	text-decoration: none;
 }
 
-a:hover {
+.navbar__link:hover {
   color: rgb(193, 96, 0);
   text-decoration: none;
   background: rgb(193, 96, 0) -webkit-gradient(linear, 100% 0, 0 0, from(rgb(193, 96, 0)), color-stop(0.5, rgb(249, 199, 117)), to(rgb(249, 199, 117)));
@@ -59,7 +60,7 @@ a:hover {
 
 }
 
-a:active {
+.navbar__link:active {
   color: rgb(193, 96, 0);
   text-decoration: none;
   background: rgb(193, 96, 0) -webkit-gradient(linear, 100% 0, 0 0, from(rgb(193, 96, 0)), color-stop(0.5, rgb(249, 199, 117)), to(rgb(249, 199, 117)));
@@ -125,6 +126,12 @@ h2 {
 	font-size: 2em
 }
 
+.content-contact {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
 .img-container {
 	display: inline-block;
 	width: 50%;
@@ -132,18 +139,35 @@ h2 {
 }
 
 .contact-details {
-	float: right;
 	color: rgb(193, 96, 0);
 	font-size: 2em;
+	background-color: rgba(0, 0, 0, 0.2);
+	width: 50%;
+	height: 40%;
+	font-family: 'Charm', cursive;
+	font-weight: 100;
+	text-align: center;
+	position: relative;
 }
 
 p {
 	font-size: 0.7em;
 }
 
+a, a:hover {
+	color: rgb(193, 96, 0);
+	text-decoration: none;
+}
+
+
 .fa, .fab {
-	min-height: 20px;
-	margin-left: 10px;
+	min-height: 25px;
+	margin-left: 8%;
+	font-weight: 800;
+}
+
+.fab:hover, .fa:hover {
+	transform: scale(1.5);
 }
 
 @media screen and (max-width: 930px) {
@@ -161,6 +185,10 @@ p {
 
 	.contact-details {
 		font-size: 2em;
+	}
+
+	.content-contact {
+		flex-direction: column;
 	}
 }
 
@@ -185,5 +213,9 @@ p {
 
 	.overlay {
 		margin-top: 10%;
+	}
+
+	.img-container {
+		margin-left: 0;
 	}
 }
