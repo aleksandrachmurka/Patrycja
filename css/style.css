@@ -183,13 +183,15 @@ a, a:hover {
 		font-size: 2em;
 	}
 
-	.contact-details {
-		font-size: 2em;
-	}
-
 	.content-contact {
 		flex-direction: column;
 	}
+
+	.contact-details {
+		font-size: 2em;
+		margin: 0 auto;
+	}
+
 }
 
 @media screen and (max-width: 420px) {
@@ -206,9 +208,10 @@ a, a:hover {
 		width: 80px;
 	}
 
-	.navbar {
-		font-size: 0.8em;
+	.nav {
+		font-size: 0.5em;
 		background-color: rgba(0, 0, 0, 0.2);
+		width: 50%;
 	}
 
 	.overlay {
@@ -218,4 +221,5 @@ a, a:hover {
 	.img-container {
 		margin-left: 0;
 	}
+
 }

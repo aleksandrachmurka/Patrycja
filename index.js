@@ -19,11 +19,22 @@ function showStart() {
 	body.style.backgroundSize = 'cover';
 }
 
+function showGallery() {
+	gallery.style.display = 'block';
+	start.style.display = 'none';
+	body.style.background = 'url("images/for_web/glitter.jpg") no-repeat center center fixed';
+	body.style.backgroundSize = 'cover';
+}
+
 function showContact() {
 	contact.style.display = 'block';
 	start.style.display = 'none';
+	contact.style.display = 'none';
 	body.style.background = 'black';
 }
 
+
 startLink.addEventListener('click', showStart);
+galleryLink.addEventListener('click', showGallery);
 contactLink.addEventListener('click', showContact);
+
