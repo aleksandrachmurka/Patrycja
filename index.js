@@ -16,6 +16,7 @@ function showStart() {
 	contact.style.display = 'none';
 	start.style.display = 'block';
 	body.style.background = 'url("images/for_web/violet_wall.jpg") no-repeat center center fixed';
+	body.style.backgroundSize = 'cover';
 }
 
 function showContact() {
