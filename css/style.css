@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Charm&subset=latin-ext');
 
+@keyframes shimmer {
+    0% {
+        background-position: -4rem top; /*50px*/
+    }
+
+    100% {
+        background-position: 12.5rem top; /*200px*/
+    }
+}
+
 * {
 	box-sizing: border-box;
 }
 
 body {
 	margin: 0 auto;
+	height: 100vh;
 	background: url('../images/for_web/violet_wall.jpg') no-repeat center center fixed;
 	background-size: cover;
 }
@@ -45,6 +56,8 @@ header {
 	text-decoration: none;
 }
 
+/*shimmer effct from https://codepen.io/redouglas/pen/gobsm*/
+
 .navbar__link:hover {
   color: rgb(193, 96, 0);
   text-decoration: none;
@@ -72,16 +85,6 @@ header {
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   -webkit-background-size: 4rem 100%; /*50px*/
-}
-
-@-webkit-keyframes shimmer {
-    0% {
-        background-position: -4rem top; /*50px*/
-    }
-
-    100% {
-        background-position: 12.5rem top; /*200px*/
-    }
 }
 
 main, section, div {
@@ -162,8 +165,15 @@ a, a:hover {
 
 .fa, .fab {
 	min-height: 25px;
-	margin-left: 8%;
 	font-weight: 800;
+}
+
+.fab[class*="facebook"] {
+	margin-right: 5%;
+}
+
+.fab[class*="youtube"] {
+	margin-left: 5%;
 }
 
 .fab:hover, .fa:hover {
@@ -222,4 +232,22 @@ a, a:hover {
 		margin-left: 0;
 	}
 
+}
+
+/*
+GALLERY*/
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img {
+	margin: 5px;
+	transition: all 1.5s;
+}
+
+img[src*="gallery"]:hover {
+	transform: scale(1.4);
 }
