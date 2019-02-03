@@ -8,20 +8,23 @@
 	<meta name="keywords" content="pokaz, pokazy, taniec, taniec brzucha, taniec orientalny, show">
 	<title>Taniec Brzucha Pokazy Patrycja Marzec</title>
 	<link rel="shortcut icon" type="image/png" href="images/for_web/favicon.png"/>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header>
-		<nav class="navbar fixed-top navbar-light bg-faded justify-content-around">
-			<img src="images/for_web/logo-transparent.png" alt="logo" class="img-responsive logo"/>
-    		<ul class="nav nav-fill justify-content-around align-items-center">
+		<nav class="navbar">
+			<img src="images/for_web/logo-transparent.png" alt="logo" class="logo"/>
+    		<ul class="nav">
 				<li class="navbar__item">
 				    <a class="navbar__link" href="#shows">Pokazy</a>
 				</li>
-				<li class="navbar__item">
+				<li class="navbar__item" id="gallery">
 				    <a class="navbar__link" href="#gallery">Galeria</a>
+				    <ul class="gallery__nav">
+				    	<li><a class="navbar__link" href="#foto">Foto</a></li>
+				    	<li><a class="navbar__link" href="#video">Video</a></li>
+				    </ul>
 				</li>
 				<li class="navbar__item">
 				    <a class="navbar__link" href="#about">O mnie</a>
@@ -43,32 +46,35 @@
 	<main class="shows"></main>
 
 	<main class="gallery">
-		<h2>Fotos</h2>
-		<div class="gallery-container">
-			<div><img src="images/for_web/gallery/1.jpg"></div>
-			<div><img src="images/for_web/gallery/2.jpg"></div>
-			<div><img src="images/for_web/gallery/3.jpg"></div>
-			<div><img src="images/for_web/gallery/4.jpg"></div>
-			<div><img src="images/for_web/gallery/5.jpg"></div>
-			<div><img src="images/for_web/gallery/6.jpg"></div>
-			<div><img src="images/for_web/gallery/7.jpg"></div>
-			<div><img src="images/for_web/gallery/8.jpg"></div>
-			<div><img src="images/for_web/gallery/9.jpg"></div>
-			<div><img src="images/for_web/gallery/10.jpg"></div>
-			<div><img src="images/for_web/gallery/11.jpg"></div>
-			<div><img src="images/for_web/gallery/12.jpg"></div>
-			<div><img src="images/for_web/gallery/13.jpg"></div>
-			<div><img src="images/for_web/gallery/14.jpg"></div>
-			<div><img src="images/for_web/gallery/15.jpg"></div>
-			<div><img src="images/for_web/gallery/16.jpg"></div>
-			<div><img src="images/for_web/gallery/17.jpg"></div>
-			<div><img src="images/for_web/gallery/18.jpg"></div>
-			<div><img src="images/for_web/gallery/19.jpg"></div>
-		</div>
-		<h2>Videos</h2>
-		<div class="video-container">
+		<section class="foto">
+			<div class="title-container"><h2>Foto</h2></div>
+			<div class="fotos-container">
+				<div><img src="images/for_web/gallery/1.jpg"></div>
+				<div><img src="images/for_web/gallery/2.jpg"></div>
+				<div><img src="images/for_web/gallery/3.jpg"></div>
+				<div><img src="images/for_web/gallery/4.jpg"></div>
+				<div><img src="images/for_web/gallery/5.jpg"></div>
+				<div><img src="images/for_web/gallery/6.jpg"></div>
+				<div><img src="images/for_web/gallery/7.jpg"></div>
+				<div><img src="images/for_web/gallery/8.jpg"></div>
+				<div><img src="images/for_web/gallery/9.jpg"></div>
+				<div><img src="images/for_web/gallery/10.jpg"></div>
+				<div><img src="images/for_web/gallery/11.jpg"></div>
+				<div><img src="images/for_web/gallery/12.jpg"></div>
+				<div><img src="images/for_web/gallery/13.jpg"></div>
+				<div><img src="images/for_web/gallery/14.jpg"></div>
+				<div><img src="images/for_web/gallery/15.jpg"></div>
+				<div><img src="images/for_web/gallery/16.jpg"></div>
+				<div><img src="images/for_web/gallery/17.jpg"></div>
+				<div><img src="images/for_web/gallery/18.jpg"></div>
+				<div><img src="images/for_web/gallery/19.jpg"></div>
+			</div>
+		</section>
+		<section class="video">
+			<div class="video-container">
 
-		</div>
+			</div>
+		</section>
 	</main>
 
 	<main class="about"></main>
@@ -89,10 +95,10 @@
 				<br>
 				<p>adres@adres.com</p>
 				<br>
-				<a href="https://www.youtube.com/channel/UCm92CxGqhwtqeYo8UUvQYyw">
+				<a href="https://www.facebook.com/profile.php?id=100003381514208">
 					<i class="fab fa-facebook"></i>
 				</a>
-				<a href="https://www.facebook.com/profile.php?id=100003381514208">
+				<a href="https://www.youtube.com/channel/UCm92CxGqhwtqeYo8UUvQYyw">
 					<i class="fab fa-youtube"></i>
 				</a>
 			</div>
