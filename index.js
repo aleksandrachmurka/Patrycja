@@ -1,59 +1,50 @@
 const body= document.querySelector('body');
 
-const startLink = document.querySelector('.logo');
-const showsLink = document.querySelector('[href="#shows"]');
-const fotoLink = document.querySelector('[href="#foto"]');
-const videoLink = document.querySelector('[href="#video"]');
-const aboutLink = document.querySelector('[href="#about"]');
-const contactLink = document.querySelector('[href="#contact"]');
 
-const start = document.querySelector('.start');
-const shows = document.querySelector('.shows');
-const gallery = document.querySelector('.gallery');
-const foto = document.querySelector('.foto');
-const video = document.querySelector('.video');
-const about = document.querySelector('.about');
-const contact = document.querySelector('.contact');
+function init() {
 
+	document.querySelectorAll('[data-link]').forEach(link => {
+		link.addEventListener('click', showSection);
+	});
 
-function showStart() {
-	start.style.display = 'block';
-	contact.style.display = 'none';
-	gallery.style.display = 'none';
-	body.style.background = 'url("images/for_web/violet_wall.jpg") no-repeat center center fixed';
-	body.style.backgroundSize = 'cover';
+	history.replaceState({}, 'Start', '#start' );
+
+	window.addEventListener('popstate', change);
 }
 
-function showFoto() {
-	gallery.style.display = 'block';
-	foto.style.display = 'block';
-	video.style.display = 'block';
-	start.style.display = 'none';
-	contact.style.display = 'none';
-	body.style.background = 'black';
-	body.style.backgroundSize = 'cover';
+function showSection(event) {
+	event.preventDefault();
+	let targetSection = event.target.getAttribute('data-link');
+	document.querySelector('.active').classList.remove('active');
+
+	if (targetSection === 'start') {
+		body.style.background = 'url("images/for_web/violet_wall.jpg") no-repeat center center fixed';
+		body.style.backgroundSize = 'cover';
+	} else {
+		body.style.background = 'black';
+	}
+
+	document.getElementsByClassName(targetSection)[0].classList.add('active');
+
+	history.pushState({}, '', `#${targetSection}`);
 }
 
-function showVideo() {
-	gallery.style.display = 'block';
-	video.style.display = 'block';
-	foto.style.display = 'none';
-	start.style.display = 'none';
-	contact.style.display = 'none';
-	body.style.background = 'black';
-	body.style.backgroundSize = 'cover';
+function change(event) {
+	let hash = location.hash.replace('#' ,'');
+	console.log(hash)
+	document.querySelector('.active').classList.remove('active');
+	document.getElementsByClassName(hash)[0].classList.add('active');
+
+
+	if (hash === 'start') {
+		body.style.background = 'url("images/for_web/violet_wall.jpg") no-repeat center center fixed';
+		body.style.backgroundSize = 'cover';
+	} else {
+		body.style.background = 'black';
+	}
+
 }
 
-function showContact() {
-	contact.style.display = 'block';
-	start.style.display = 'none';
-	gallery.style.display = 'none';
-	body.style.background = 'black';
-}
+document.addEventListener('DOMContentLoaded', init);
 
-
-startLink.addEventListener('click', showStart);
-fotoLink.addEventListener('click', showFoto);
-videoLink.addEventListener('click', showVideo);
-contactLink.addEventListener('click', showContact);
-
+// Steve Griffith https://gist.github.com/prof3ssorSt3v3/f00d99fb69272fc2e0e4f4dd46e89f41

@@ -15,38 +15,39 @@
 <body>
 	<header>
 		<nav class="navbar">
-			<img src="images/for_web/logo-transparent.png" alt="logo" class="logo"/>
+			<img src="images/for_web/logo-transparent.png" alt="logo" class="logo" data-link="start"/>
     		<ul class="nav">
 				<li class="navbar__item">
-				    <a class="navbar__link" href="#shows">Pokazy</a>
+				    <a class="navbar__link" href="#" data-link="shows">Pokazy</a>
 				</li>
 				<li class="navbar__item" id="gallery">
-				    <a class="navbar__link" href="#gallery">Galeria</a>
+				    <a class="navbar__link" href="#">Galeria</a>
 				    <ul class="gallery__nav">
-				    	<li><a class="navbar__link" href="#foto">Foto</a></li>
-				    	<li><a class="navbar__link" href="#video">Video</a></li>
+				    	<li><a class="navbar__link" href="#" data-link="foto">Foto</a></li>
+				    	<li><a class="navbar__link" href="#" data-link="video">Video</a></li>
 				    </ul>
 				</li>
 				<li class="navbar__item">
-				    <a class="navbar__link" href="#about">O mnie</a>
+				    <a class="navbar__link" href="#" data-link="about">O mnie</a>
 				</li>
 				<li class="navbar__item">
-				    <a class="navbar__link" href="#contact">Kontakt</a>
+				    <a class="navbar__link" href="#" data-link="contact">Kontakt</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
-	<main class="start">
-		<section class="content">
-			<div class="overlay">
-				<h1>Taniec brzucha</h1>
-			</div>
+	<main>
+		<section class="start active">
+			<section class="content">
+				<div class="overlay">
+					<h1>Taniec brzucha</h1>
+				</div>
+			</section>
 		</section>
-	</main>
 
-	<main class="shows"></main>
+		<section class="shows"></section>
 
-	<main class="gallery">
+
 		<section class="foto">
 			<div class="title-container"><h2>Foto</h2></div>
 			<div class="fotos-container">
@@ -71,40 +72,43 @@
 				<div><img src="images/for_web/gallery/19.jpg"></div>
 			</div>
 		</section>
+
 		<section class="video">
 			<div class="title-container"><h2>Video</h2></div>
 			<div class="video-container">
 				<iframe width="560" height="400" src="https://www.youtube.com/embed/videoseries?list=PLTk9_zU27kOLkYEQ5vNvjF2I9KATer0Us" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			</div>
 		</section>
-	</main>
 
-	<main class="about"></main>
 
-	<main class="contact">
-		<section class="content-contact">
-			<div class="img-container">
-				<img src="images/for_web/violet-fur.jpg" alt="belly dancer in violet costume and fur"/>
-			</div>
-			<div class="contact-details">
-				<h2>Kontakt</h2>
-				<br>
-				<i class="fa fa-phone"></i>
-				<br>
-				<p>000 000 000</p>
-				<br>
-				<i class="fa fa-envelope"></i>
-				<br>
-				<p>adres@adres.com</p>
-				<br>
-				<a href="https://www.facebook.com/profile.php?id=100003381514208">
-					<i class="fab fa-facebook"></i>
-				</a>
-				<a href="https://www.youtube.com/channel/UCm92CxGqhwtqeYo8UUvQYyw">
-					<i class="fab fa-youtube"></i>
-				</a>
-			</div>
+		<section class="about"></section>
+
+		<section class="contact">
+			<section class="content-contact">
+				<div class="img-container">
+					<img src="images/for_web/violet-fur.jpg" alt="belly dancer in violet costume and fur"/>
+				</div>
+				<div class="contact-details">
+					<h2>Kontakt</h2>
+					<br>
+					<i class="fa fa-phone"></i>
+					<br>
+					<p>000 000 000</p>
+					<br>
+					<i class="fa fa-envelope"></i>
+					<br>
+					<p>adres@adres.com</p>
+					<br>
+					<a href="https://www.facebook.com/profile.php?id=100003381514208">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="https://www.youtube.com/channel/UCm92CxGqhwtqeYo8UUvQYyw">
+						<i class="fab fa-youtube"></i>
+					</a>
+				</div>
+			</section>
 		</section>
+
 	</main>
 <script src="index.js"></script>
 </body>
