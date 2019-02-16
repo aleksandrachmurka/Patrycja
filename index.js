@@ -2,8 +2,7 @@ const body= document.querySelector('body');
 
 
 function init() {
-
-	document.querySelectorAll('[data-link]').forEach(link => {
+	document.querySelectorAll('[data-link]').forEach( function(link) {
 		link.addEventListener('click', showSection);
 	});
 
@@ -30,11 +29,10 @@ function showSection(event) {
 }
 
 function change(event) {
-	let hash = location.hash.replace('#' ,'');
+	let hash = location.hash.replace('#','');
 	console.log(hash)
 	document.querySelector('.active').classList.remove('active');
 	document.getElementsByClassName(hash)[0].classList.add('active');
-
 
 	if (hash === 'start') {
 		body.style.background = 'url("images/for_web/violet_wall.jpg") no-repeat center center fixed';
