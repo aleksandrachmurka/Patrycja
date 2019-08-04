@@ -9,9 +9,9 @@
 }
 
 /*Variables*/
-
 :root {
-	--font-color: rgb(193, 96, 0);
+	/*--font-color: rgb(193, 96, 0);*/
+	--font-color: rgb(203, 121, 39);
 }
 
 
@@ -101,7 +101,7 @@ header {
 
 .navbar__link:active {
   color: var(--font-color);
-    text-decoration: none;
+  text-decoration: none;
   background: var(--font-color) -webkit-gradient(linear, 100% 0, 0 0, from(var(--font-color)), color-stop(0.5, rgb(249, 199, 117)), to(rgb(249, 199, 117)));
   background-position: -4rem top; /*50px*/
   background-repeat: no-repeat;
@@ -143,12 +143,13 @@ main, section, div {
 h1, h2 {
 	padding: 5%;
 	display: inline-block;
-	color: transparent;
+	color: var(--font-color);
+	/*color: transparent;*/
 	background: var(--font-color) -webkit-gradient(linear, 10% 0, 0 0, from(var(--font-color)), color-stop(0.5, rgb(242, 169, 101)), to(rgb(249, 199, 117)));
   	background-position: -4rem top; /*50px*/
   	background-repeat: repeat;
   	-webkit-background-clip: text;
- /* 	-webkit-text-fill-color: transparent;*/
+  	-webkit-text-fill-color: transparent;
   	-webkit-animation-name: shimmer;
   	-webkit-animation-delay: 1s;
   	-webkit-animation-duration: 2.2s;
@@ -189,6 +190,7 @@ h2 {
 	height: 70vh;
 	width: 70vw;
 	margin: auto;
+	margin-bottom: 2em;
 }
 
 .video-container iframe {
