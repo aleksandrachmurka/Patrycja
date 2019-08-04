@@ -23,7 +23,7 @@ body {
 	margin: 0 auto;
 	height: 100vh;
 	font-family: 'Charm', cursive;
-	background: url('../images/for_web/violet_wall.jpg') no-repeat center center fixed;
+	background: url('../images/for_web/violet_wall.jpg') no-repeat top center fixed;
 	background-size: cover;
 }
 
