@@ -135,9 +135,9 @@ main, section, div {
 
 .overlay {
 	display: inline-block;
-	background-color: rgba(0, 0, 0, 0.2);
 	text-align: center;
 	margin-top: 8%;
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 h1, h2 {
