@@ -10,7 +10,6 @@
 
 /*Variables*/
 :root {
-	/*--font-color: rgb(193, 96, 0);*/
 	--font-color: rgb(203, 121, 39);
 }
 
@@ -121,6 +120,7 @@ header {
 
 #gallery:hover .gallery__nav {
 	display: block;
+	padding-left: 0;
 }
 
 /*Main*/
@@ -140,8 +140,8 @@ main, section, div {
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
-h1, h2 {
-	padding: 5%;
+h1 {
+	padding: 2%;
 	display: inline-block;
 	color: var(--font-color);
 	/*color: transparent;*/
@@ -163,9 +163,34 @@ h1 {
 }
 
 h2 {
+	padding: 3%;
+	display: inline-block;
+	color: var(--font-color);
 	font-size: 2em;
 	font-weight: 200;
+	margin-top: 0;
 	margin-bottom: 0;
+}
+
+/*Shows*/
+
+.shows {
+	color: var(--font-color);
+	width: 70%;
+	margin: 0 auto;
+}
+
+.shows p {
+	font-size: 1em;
+}
+
+img[src*="star"] {
+	shape-outside: url(images/for_web/star.jpg);
+	-webkit-shape-outside: url(images/for_web/star.jpg);
+}
+
+img[src*="floor"] {
+	margin: 0 auto;
 }
 
 /*Gallery*/
@@ -213,7 +238,7 @@ img[src*="gallery"]:hover {
 
 /*Contact*/
 
-.content-contact {
+.contact-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -221,9 +246,9 @@ img[src*="gallery"]:hover {
 
 .img-container {
 	display: inline-block;
+	text-align: center;
 	width: 50%;
 	margin-left: 10%;
-	margin-top: 8%;
 }
 
 .contact-details {
@@ -231,9 +256,14 @@ img[src*="gallery"]:hover {
 	font-size: 2em;
 	background-color: rgba(0, 0, 0, 0.2);
 	width: 50%;
+	margin-right: 10%;
 	height: 40%;
 	font-weight: 100;
 	text-align: center;
+}
+
+.contact-detail p {
+	margin-top: 0;
 }
 
 p {
@@ -274,16 +304,16 @@ a, a:hover {
 		font-size: 2em;
 	}
 
+	.overlay {
+		margin-top: 10%;
+	}
+
+	.nav {
+		padding-left: 0;
+	}
+
 	.navbar {
 		font-size: 2em;
-	}
-
-	.content-contact {
-		flex-direction: column;
-	}
-
-	.img-container {
-		margin: 0 auto;
 	}
 
 	.contact-details {
@@ -302,22 +332,30 @@ a, a:hover {
 		font-size: 2em;
 	}
 
-	.logo {
-		height: 50px;
-		width: 80px;
+	.navbar {
+		flex-direction: column;
 	}
 
 	.nav {
-		font-size: 0.5em;
+		flex-direction: column;
+		font-size: 1em;
 	}
 
 	.overlay {
-		margin-top: 15%;
+		display: none;
 	}
 
 	.img-container {
-		margin-left: 0;
+		margin: 0 auto;
+		width: auto;
 	}
 
+	.contact-container {
+		flex-direction: column;
+	}
+
+	.contact-details {
+		width: auto;
+	}
 }
 

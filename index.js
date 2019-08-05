@@ -17,7 +17,7 @@ function showSection(event) {
 	document.querySelector('.active').classList.remove('active');
 
 	if (targetSection === 'start') {
-		body.style.background = 'url("images/for_web/violet_wall.jpg") no-repeat center center fixed';
+		body.style.background = 'url("images/for_web/violet_wall.jpg") no-repeat top center fixed';
 		body.style.backgroundSize = 'cover';
 	} else {
 		body.style.background = 'black';
@@ -35,7 +35,7 @@ function change(event) {
 	document.getElementsByClassName(hash)[0].classList.add('active');
 
 	if (hash === 'start') {
-		body.style.background = 'url("images/for_web/violet_wall.jpg") no-repeat center center fixed';
+		body.style.background = 'url("images/for_web/violet_wall.jpg") no-repeat top center fixed';
 		body.style.backgroundSize = 'cover';
 	} else {
 		body.style.background = 'black';
