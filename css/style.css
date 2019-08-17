@@ -21,7 +21,7 @@
 body {
 	margin: 0 auto;
 	height: 100vh;
-	font-family: 'Charm', cursive;
+	font-family: 'Charm', serif;
 	background: url('../images/for_web/violet_wall.jpg') no-repeat top center fixed;
 	background-size: cover;
 }
@@ -51,13 +51,13 @@ header {
 	justify-content: space-around;
 	align-items: center;
 	background-color: rgba(0, 0, 0, 0.2);
-	font: lighter 2.6rem 'Charm', cursive;
+	font: lighter 2.6rem 'Charm', serif;
 }
 
-.logo {
+/*.logo {
 	height: 120px;
 	width: 200px;
-}
+}*/
 
 .nav {
 	width: 70%;
