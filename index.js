@@ -3,7 +3,7 @@ const body= document.querySelector('body');
 
 function init() {
 	if (navigator.serviceWorker) {
-	  navigator.serviceWorker.register('/service_worker.js')
+	  navigator.serviceWorker.register('./service_worker.js')
 	    .then(function() {
 	      console.log('Service Worker registered');
 	    }).catch(function(err) {
