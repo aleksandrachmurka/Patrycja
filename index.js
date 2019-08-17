@@ -6,8 +6,8 @@ function init() {
 	  navigator.serviceWorker.register('./service_worker.js')
 	    .then(function() {
 	      console.log('Service Worker registered');
-	    }).catch(function() {
-	      console.log('Failed to register Service Worker');
+	    }).catch(function(err) {
+	      console.log('Failed to register Service Worker' + err);
 	    });
 	}
 
@@ -15,6 +15,7 @@ function init() {
 		link.addEventListener('click', showSection);
 	});
 
+	//current -> tak zmieniamy url, wywolujac show Section lub zostawiajac ponizsze
 	history.replaceState({}, 'Start', '#start' );
 
 	window.addEventListener('popstate', change);
