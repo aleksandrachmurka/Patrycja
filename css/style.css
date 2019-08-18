@@ -379,6 +379,10 @@ a, a:hover {
 		font-size: 1em;
 	}
 
+	.gallery__nav {
+		position: static;
+	}
+
 	.overlay {
 		display: none;
 	}
