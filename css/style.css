@@ -54,11 +54,6 @@ header {
 	font: lighter 2.6rem 'Charm', serif;
 }
 
-/*.logo {
-	height: 120px;
-	width: 200px;
-}*/
-
 .nav {
 	width: 70%;
 	display: flex;
@@ -180,8 +175,47 @@ h2 {
 	margin: 0 auto;
 }
 
-.shows p {
+.show-section-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.show-section-container-image {
+	align-self: center;
+}
+
+.show-section-container-text:first-of-type {
+	margin-right: 5%;
+}
+
+.show-section-container-text:nth-of-type(2) {
+	margin-left: 5%;
+}
+
+.shows p, .shows li {
 	font-size: 1em;
+	font-family: Palatino;
+	line-height: 1.5em;
+}
+
+.shows ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.shows li:before {
+  content: "\2605   ";
+}
+
+.shows h3 {
+	font-size: 3em;
+	text-align: center;
+	font-weight: normal;
+}
+
+.shows h4 {
+	font-size: 1.5em;
+	font-weight: normal;
 }
 
 img[src*="star"] {
@@ -314,6 +348,10 @@ a, a:hover {
 
 	.navbar {
 		font-size: 2em;
+	}
+
+	.show-section-container {
+		flex-direction: column;
 	}
 
 	.contact-details {
