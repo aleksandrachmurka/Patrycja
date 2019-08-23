@@ -1,6 +1,5 @@
 const body= document.querySelector('body');
 
-
 function init() {
 	if (navigator.serviceWorker) {
 	  navigator.serviceWorker.register('./service_worker.js')
@@ -15,7 +14,6 @@ function init() {
 		link.addEventListener('click', showSection);
 	});
 
-	//current -> tak zmieniamy url, wywolujac show Section lub zostawiajac ponizsze
 	history.replaceState({}, 'Home', '#home' );
 
 	window.addEventListener('popstate', change);
