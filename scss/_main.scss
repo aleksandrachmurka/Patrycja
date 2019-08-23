@@ -1,0 +1,40 @@
+/*BODY, MAIN*/
+
+body {
+	margin: 0 auto;
+	height: 100vh;
+	font-family: 'Charm', serif;
+	background: url('../images/for_web/violet_wall.jpg') no-repeat top center fixed;
+	background-size: cover;
+}
+
+main, section, div {
+	margin-top: 0;
+}
+
+.content {
+	height: 100vh;
+}
+
+.home, .shows, .gallery, .foto, .video, .about, .contact {
+	display: none;
+}
+
+.active {
+	display: block;
+}
+
+.overlay {
+	display: inline-block;
+	text-align: center;
+	margin-top: 8%;
+	background-color: rgba(0, 0, 0, 0.2);
+
+	@media #{$desktop} {
+		margin-top: 10%
+	}
+
+	@media #{$mobile} {
+		display: none;
+	}
+}

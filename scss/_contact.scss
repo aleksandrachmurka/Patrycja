@@ -1,0 +1,72 @@
+@import "utils";
+
+/*CONTACT*/
+
+.contact-container {
+	@extend .flex-row;
+
+	@media #{$mobile} {
+		flex-direction: column;
+	}
+}
+
+.contact-image {
+	display: inline-block;
+	text-align: center;
+	width: 50%;
+	margin-left: 10%;
+
+	@media #{$mobile} {
+		margin: 0 auto;
+		width: auto;
+	}
+}
+
+.contact-details {
+	color: $base-color;
+	font-size: 2em;
+	background-color: rgba(0, 0, 0, 0.2);
+	width: 50%;
+	margin-right: 10%;
+	height: 40%;
+	font-weight: 100;
+	text-align: center;
+
+	@media #{$desktop} {
+		font-size: 2em;
+		margin: 0 auto;
+	}
+
+	@media #{$mobile} {
+		width: auto;
+	}
+
+	p {
+		margin-top: 0;
+		font-size: 0.7em;
+	}
+
+}
+
+
+a, a:hover {
+	color: $base-color;
+	text-decoration: none;
+}
+
+.fa, .fab {
+	min-height: 25px;
+	font-weight: 800;
+}
+
+.fab[class*="facebook"] {
+	margin-right: 5%;
+}
+
+.fab[class*="youtube"] {
+	margin-left: 5%;
+}
+
+.fab:hover, .fa:hover {
+	transform: scale(1.5);
+}

@@ -1,0 +1,23 @@
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.plain-text {
+	font-size: 1em;
+	font-family: Palatino;
+	line-height: 1.5em;
+}
+
+/*shimmer effct from https://codepen.io/redouglas/pen/gobsm*/
+@keyframes shimmer {
+    0% {
+        background-position: -4rem top; /*50px*/
+    }
+
+    100% {
+        background-position: 12.5rem top; /*200px*/
+    }
+}

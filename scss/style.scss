@@ -1,0 +1,17 @@
+* {
+	box-sizing: border-box;
+}
+
+/*VARIABLES*/
+$base-color: rgb(203, 121, 39);
+$desktop: "screen and (max-width: 930px)";
+$mobile: "screen and (max-width: 420px)";
+
+@import "_utils";
+@import "_header";
+@import "_text";
+@import "_shows";
+@import "_gallery";
+@import "_contact";
+@import "_main";
+
