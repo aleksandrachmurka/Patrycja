@@ -16,7 +16,7 @@ function init() {
 	});
 
 	//current -> tak zmieniamy url, wywolujac show Section lub zostawiajac ponizsze
-	history.replaceState({}, 'Start', '#start' );
+	history.replaceState({}, 'Home', '#home' );
 
 	window.addEventListener('popstate', change);
 }
@@ -26,7 +26,7 @@ function showSection(event) {
 	let targetSection = event.target.getAttribute('data-link');
 	document.querySelector('.active').classList.remove('active');
 
-	if (targetSection === 'start') {
+	if (targetSection === 'home') {
 		body.style.background = 'url("images/for_web/violet_wall.jpg") no-repeat top center fixed';
 		body.style.backgroundSize = 'cover';
 	} else {
@@ -44,7 +44,7 @@ function change(event) {
 	document.querySelector('.active').classList.remove('active');
 	document.getElementsByClassName(hash)[0].classList.add('active');
 
-	if (hash === 'start') {
+	if (hash === 'home') {
 		body.style.background = 'url("images/for_web/violet_wall.jpg") no-repeat top center fixed';
 		body.style.backgroundSize = 'cover';
 	} else {
@@ -54,5 +54,3 @@ function change(event) {
 }
 
 document.addEventListener('DOMContentLoaded', init);
-
-// Steve Griffith https://gist.github.com/prof3ssorSt3v3/f00d99fb69272fc2e0e4f4dd46e89f41
