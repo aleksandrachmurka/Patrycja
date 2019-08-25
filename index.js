@@ -24,12 +24,8 @@ function showSection(event) {
 	let targetSection = event.target.getAttribute('data-link');
 	document.querySelector('.active').classList.remove('active');
 
-	if (targetSection === 'home') {
-		body.style.background = 'url("images/for_web/violet_wall.jpg") no-repeat top center fixed';
-		body.style.backgroundSize = 'cover';
-	} else {
-		body.style.background = 'black';
-	}
+	handleBackground(targetSection);
+	handleNav(targetSection);
 
 	document.getElementsByClassName(targetSection)[0].classList.add('active');
 
@@ -41,13 +37,27 @@ function change(event) {
 	document.querySelector('.active').classList.remove('active');
 	document.getElementsByClassName(hash)[0].classList.add('active');
 
-	if (hash === 'home') {
+	handleBackground(hash);
+	handleNav(hash);
+}
+
+function handleBackground(section) {
+	if (section === 'home') {
 		body.style.background = 'url("images/for_web/violet_wall.jpg") no-repeat top center fixed';
 		body.style.backgroundSize = 'cover';
 	} else {
 		body.style.background = 'black';
 	}
+}
 
+function handleNav(section) {
+	if (section !== 'home') {
+		document.querySelector('header').classList.add('header--section');
+		document.querySelector('.navbar').classList.add('navbar--section');
+	} else {
+		document.querySelector('header').classList.remove('header--section');
+		document.querySelector('.navbar').classList.remove('navbar--section');
+	}
 }
 
 document.addEventListener('DOMContentLoaded', init);
