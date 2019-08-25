@@ -38,7 +38,6 @@ function showSection(event) {
 
 function change(event) {
 	let hash = location.hash.replace('#','');
-	console.log(hash)
 	document.querySelector('.active').classList.remove('active');
 	document.getElementsByClassName(hash)[0].classList.add('active');
 
