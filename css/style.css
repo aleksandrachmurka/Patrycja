@@ -91,9 +91,7 @@
       background-repeat: no-repeat;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      -webkit-animation-name: shimmer;
-      -webkit-animation-duration: 2s;
-      -webkit-animation-iteration-count: infinite;
+      -webkit-animation: shimmer 2s infinite;
       -webkit-background-size: 4rem 100%;
       /*50px*/ }
 
@@ -114,10 +112,7 @@ h1 {
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation-name: shimmer;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-duration: 2.2s;
-  -webkit-animation-iteration-count: infinite;
+  -webkit-animation: shimmer 2.2s 1s infinite;
   -webkit-background-size: 13rem 20%;
   /*50px*/ }
   @media screen and (max-width: 930px) {

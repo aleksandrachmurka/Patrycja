@@ -87,9 +87,7 @@
 			background-repeat: no-repeat;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
-			-webkit-animation-name: shimmer;
-			-webkit-animation-duration: 2s;
-			-webkit-animation-iteration-count: infinite;
+			-webkit-animation: shimmer 2s infinite;
 			-webkit-background-size: 4rem 100%; /*50px*/
 		}
 	}
