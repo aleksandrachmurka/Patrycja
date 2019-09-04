@@ -8,10 +8,11 @@
   justify-content: space-around;
   align-items: center; }
 
-.plain-text, .shows p, .shows li {
-  font-size: 1em;
+.plain-text, .shows p, .shows li, .about p, .about li {
+  font-size: 1rem;
   font-family: Palatino;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  text-align: justify; }
 
 /*shimmer effct from https://codepen.io/redouglas/pen/gobsm*/
 @keyframes shimmer {
@@ -140,10 +141,11 @@ h2 {
   justify-content: space-around;
   align-items: center; }
 
-.plain-text, .shows p, .shows li {
-  font-size: 1em;
+.plain-text, .shows p, .shows li, .about p, .about li {
+  font-size: 1rem;
   font-family: Palatino;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  text-align: justify; }
 
 /*shimmer effct from https://codepen.io/redouglas/pen/gobsm*/
 @keyframes shimmer {
@@ -189,6 +191,75 @@ h2 {
   .show-section-container__text:nth-of-type(2) {
     margin-left: 5%; }
 
+.flex-row, .contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
+.plain-text, .shows p, .shows li, .about p, .about li {
+  font-size: 1rem;
+  font-family: Palatino;
+  line-height: 1.5em;
+  text-align: justify; }
+
+/*shimmer effct from https://codepen.io/redouglas/pen/gobsm*/
+@keyframes shimmer {
+  0% {
+    background-position: -4rem top;
+    /*50px*/ }
+  100% {
+    background-position: 12.5rem top;
+    /*200px*/ } }
+/*ABOUT*/
+.about .about-container {
+  display: flex;
+  flex-direction: row; }
+  @media screen and (max-width: 930px) {
+    .about .about-container {
+      flex-direction: column; } }
+.about h4 {
+  font-size: 2em;
+  color: #cb7927;
+  text-align: center;
+  font-weight: normal;
+  margin-top: 5%; }
+.about ul {
+  list-style-type: none;
+  padding-left: 0; }
+.about li:before {
+  content: "\2605   "; }
+
+.about-image {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  margin-left: 10%; }
+  @media screen and (max-width: 930px) {
+    .about-image {
+      margin: 0 auto;
+      width: auto; } }
+
+.about-text {
+  color: #cb7927;
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 50%;
+  margin-right: 10%;
+  height: 40%;
+  font-weight: 100;
+  text-align: center; }
+  @media screen and (max-width: 930px) {
+    .about-text {
+      font-size: 2em;
+      margin: 0 auto; } }
+  @media screen and (max-width: 420px) {
+    .about-text {
+      width: 70%; } }
+  .about-text p {
+    margin-top: 0;
+    font-size: 0.7em; }
+
 /*GALLERY*/
 .title-container {
   display: flex;
@@ -225,10 +296,11 @@ h2 {
   justify-content: space-around;
   align-items: center; }
 
-.plain-text, .shows p, .shows li {
-  font-size: 1em;
+.plain-text, .shows p, .shows li, .about p, .about li {
+  font-size: 1rem;
   font-family: Palatino;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  text-align: justify; }
 
 /*shimmer effct from https://codepen.io/redouglas/pen/gobsm*/
 @keyframes shimmer {

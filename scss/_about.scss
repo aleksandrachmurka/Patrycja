@@ -1,0 +1,73 @@
+@import "utils";
+
+/*ABOUT*/
+
+.about {
+	.about-container {
+		display: flex;
+		flex-direction: row;
+
+		@media #{$desktop} {
+			flex-direction: column;
+		}
+	}
+
+	h4 {
+		font-size: 2em;
+		color: $base-color;
+		text-align: center;
+		font-weight: normal;
+		margin-top: 5%;
+	}
+
+	ul {
+		list-style-type: none;
+		padding-left: 0;
+	}
+
+	p, li {
+		@extend .plain-text;
+
+	}
+
+	li:before {
+	  content: "\2605   ";
+	}
+}
+
+.about-image {
+	display: inline-block;
+	text-align: center;
+	width: 50%;
+	margin-left: 10%;
+
+	@media #{$desktop} {
+		margin: 0 auto;
+		width: auto;
+	}
+}
+
+.about-text {
+	color: $base-color;
+	font-size: 2em;
+	background-color: rgba(0, 0, 0, 0.2);
+	width: 50%;
+	margin-right: 10%;
+	height: 40%;
+	font-weight: 100;
+	text-align: center;
+
+	@media #{$desktop} {
+		font-size: 2em;
+		margin: 0 auto;
+	}
+
+	@media #{$mobile} {
+		width: 70%;
+	}
+
+	p {
+		margin-top: 0;
+		font-size: 0.7em;
+	}
+}
