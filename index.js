@@ -14,6 +14,8 @@ function init() {
 		link.addEventListener('click', showSection);
 	});
 
+	document.querySelector('#gallery-link').addEventListener('focus', showGalleryMenu);
+
 	history.replaceState({}, 'Home', '#home' );
 
 	window.addEventListener('popstate', change);
@@ -58,6 +60,11 @@ function handleNav(section) {
 		document.querySelector('header').classList.remove('header--section');
 		document.querySelector('.navbar').classList.remove('navbar--section');
 	}
+}
+
+function showGalleryMenu() {
+	this.setAttribute('aria-expanded', 'true');
+	document.querySelector('ul[aria-hidden]').setAttribute('aria-hidden', 'false');
 }
 
 document.addEventListener('DOMContentLoaded', init);

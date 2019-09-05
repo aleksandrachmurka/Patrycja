@@ -18,16 +18,16 @@
 <body>
 	<header class="header">
 		<nav class="navbar">
-			<img src="images/for_web/logo-dancer.png" alt="logo" class="logo" data-link="home"/>
+			<img src="images/for_web/logo-dancer.png" alt="logo" class="logo" data-link="home" role="link" aria-label="home" tabindex="0"/>
     		<ul class="navbar__items">
 				<li class="navbar__item">
 				    <a class="navbar__link" href="#" data-link="shows">Pokazy</a>
 				</li>
 				<li class="navbar__item" id="gallery">
-				    <a class="navbar__link">Galeria</a>
-				    <ul class="navbar__gallery">
-				    	<li><a class="navbar__link" href="#" data-link="foto">Foto</a></li>
-				    	<li><a class="navbar__link" href="#" data-link="video">Video</a></li>
+				    <a class="navbar__link" id="gallery-link" role="button" aria-expanded="false" tabindex="0">Galeria</a>
+				    <ul class="navbar__gallery" aria-hidden="true">
+				    	<li><a class="navbar__link" href="#" data-link="foto" aria-label="foto">Foto</a></li>
+				    	<li><a class="navbar__link" href="#" data-link="video" aria-label="video">Video</a></li>
 				    </ul>
 				</li>
 				<li class="navbar__item">
