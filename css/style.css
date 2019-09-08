@@ -363,7 +363,7 @@ a, a:hover {
 .fab[class*="youtube"] {
   margin-left: 5%; }
 
-.fab:hover, .fa:hover {
+.fab:hover {
   transform: scale(1.5); }
 
 /*BODY, MAIN*/
