@@ -8,11 +8,17 @@
   justify-content: space-around;
   align-items: center; }
 
-.plain-text, .shows p, .shows li, .about p, .about li {
+.plain-text, .shows p, .about p {
   font-size: 1rem;
   font-family: Palatino;
   line-height: 1.5em;
   text-align: justify; }
+
+.list-text, .shows li, .about li {
+  font-size: 1rem;
+  font-family: Palatino;
+  line-height: 1.5em;
+  text-align: start; }
 
 /*shimmer effct from https://codepen.io/redouglas/pen/gobsm*/
 @keyframes shimmer {
@@ -145,11 +151,17 @@ h2 {
   justify-content: space-around;
   align-items: center; }
 
-.plain-text, .shows p, .shows li, .about p, .about li {
+.plain-text, .shows p, .about p {
   font-size: 1rem;
   font-family: Palatino;
   line-height: 1.5em;
   text-align: justify; }
+
+.list-text, .shows li, .about li {
+  font-size: 1rem;
+  font-family: Palatino;
+  line-height: 1.5em;
+  text-align: start; }
 
 /*shimmer effct from https://codepen.io/redouglas/pen/gobsm*/
 @keyframes shimmer {
@@ -201,11 +213,17 @@ h2 {
   justify-content: space-around;
   align-items: center; }
 
-.plain-text, .shows p, .shows li, .about p, .about li {
+.plain-text, .shows p, .about p {
   font-size: 1rem;
   font-family: Palatino;
   line-height: 1.5em;
   text-align: justify; }
+
+.list-text, .shows li, .about li {
+  font-size: 1rem;
+  font-family: Palatino;
+  line-height: 1.5em;
+  text-align: start; }
 
 /*shimmer effct from https://codepen.io/redouglas/pen/gobsm*/
 @keyframes shimmer {
@@ -300,11 +318,17 @@ h2 {
   justify-content: space-around;
   align-items: center; }
 
-.plain-text, .shows p, .shows li, .about p, .about li {
+.plain-text, .shows p, .about p {
   font-size: 1rem;
   font-family: Palatino;
   line-height: 1.5em;
   text-align: justify; }
+
+.list-text, .shows li, .about li {
+  font-size: 1rem;
+  font-family: Palatino;
+  line-height: 1.5em;
+  text-align: start; }
 
 /*shimmer effct from https://codepen.io/redouglas/pen/gobsm*/
 @keyframes shimmer {

@@ -23,8 +23,12 @@
 		padding-left: 0;
 	}
 
-	p, li {
+	p {
 		@extend .plain-text;
+	}
+
+	li {
+		@extend .list-text;
 	}
 
 	li:before {
