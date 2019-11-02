@@ -412,7 +412,8 @@ main, section, div {
 
 .overlay {
   display: inline-block;
-  text-align: center; }
+  text-align: center;
+  margin-left: 5%; }
   @media screen and (max-width: 930px) {
     .overlay {
       margin-top: 10%; } }
