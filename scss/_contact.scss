@@ -3,6 +3,7 @@
 /*CONTACT*/
 
 .contact-container {
+	margin-top: 3%;
 	@extend .flex-row;
 
 	@media #{$mobile} {
@@ -39,6 +40,10 @@
 
 	@media #{$mobile} {
 		width: auto;
+	}
+
+	h2 {
+		font-size: 1.5em;
 	}
 
 	p {
