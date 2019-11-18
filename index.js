@@ -1,5 +1,3 @@
-const body= document.querySelector('body');
-
 function init() {
 	if (navigator.serviceWorker) {
 	  navigator.serviceWorker.register('./service_worker.js')
@@ -44,6 +42,7 @@ function change(event) {
 }
 
 function handleBackground(section) {
+	const body= document.querySelector('body');
 	if (section === 'home') {
 		body.style.background = 'url("images/for_web/violet_wall.jpg") no-repeat top center fixed';
 		body.style.backgroundSize = 'cover';

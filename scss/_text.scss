@@ -6,15 +6,15 @@ h1 {
   font-weight: 200;
 	padding: 2%;
 	color: $base-color;
-	background: $base-color -webkit-gradient(linear, 15 0, 0 0, from($base-color), color-stop(0.5, rgb(249, 199, 117)), to(rgb(249, 199, 117)));
-  background-position: -4rem top; /*50px*/
+  background-color: $base-color;
+  background-image: linear-gradient(to left, rgb(249, 199, 117) 0%, $base-color 15%);
+  background-position: -64px top;
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: shimmer 2.2s 1s infinite;
-  -webkit-background-size: 13rem 20%; /*50px*/
-
-  //after position absolute, transform translate x jego zamiast background-position
+  -webkit-background-size: 13rem 20%;
+  //after pseudoelement with position absolute, transform translate x instead of background-position
 
   @media #{$desktop} {
     font-size: 4em;
