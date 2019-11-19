@@ -13,7 +13,11 @@
 }
 
 .navbar {
-	@extend .flex-row;
+	//use mixin here
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -36,7 +40,11 @@
 	}
 
 	&__items {
-		@extend .flex-row;
+		//use mixin here
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
 		width: 70%;
 		list-style-type: none;
 
