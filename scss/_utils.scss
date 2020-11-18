@@ -1,30 +1,30 @@
 .flex-row {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .plain-text {
-	font-size: 1rem;
-	font-family: Palatino;
-	line-height: 1.5em;
-	text-align: justify;
+  font-size: 1rem;
+  font-family: "Lora", serif;
+  line-height: 1.5em;
+  text-align: justify;
 }
 
 .list-text {
-	font-size: 1rem;
-	font-family: Palatino;
-	line-height: 1.5em;
-	text-align: start;
+  font-size: 1rem;
+  font-family: "Lora", serif;
+  line-height: 1.5em;
+  text-align: start;
 }
 
 @keyframes shimmer {
-    0% {
-        background-position: -4rem top;
-    }
+  0% {
+    background-position: -4rem top;
+  }
 
-    100% {
-        background-position: 12.5rem top;
-    }
+  100% {
+    background-position: 12.5rem top;
+  }
 }

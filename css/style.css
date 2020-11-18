@@ -10,13 +10,13 @@
 
 .plain-text, .shows p, .about p {
   font-size: 1rem;
-  font-family: Palatino;
+  font-family: "Lora", serif;
   line-height: 1.5em;
   text-align: justify; }
 
 .list-text, .shows li, .about li {
   font-size: 1rem;
-  font-family: Palatino;
+  font-family: "Lora", serif;
   line-height: 1.5em;
   text-align: start; }
 
@@ -43,8 +43,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  font: lighter 2.6rem 'Charm', serif; }
+  background-color: rgba(0, 0, 0, 0.4);
+  font: lighter 2.6rem "Cinzel", serif; }
   @media screen and (max-width: 930px) {
     .navbar {
       font-size: 2em; } }
@@ -84,12 +84,12 @@
     height: 50%;
     width: 100%;
     white-space: nowrap;
-    color: #fc9226;
+    color: white;
     text-decoration: none; }
     .navbar__link:hover, .navbar__link:active {
-      color: #fc9226;
+      color: white;
       text-decoration: none;
-      background: #fc9226 -webkit-gradient(linear, 100% 0, 0 0, from(#fc9226), color-stop(0.5, #f9c775), to(#f9c775));
+      background: white -webkit-gradient(linear, 100% 0, 0 0, from(white), color-stop(0.5, #f9c775), to(#f9c775));
       background-position: -4rem top;
       /*50px*/
       background-repeat: no-repeat;
@@ -113,9 +113,9 @@ h1 {
   font-size: 5.5em;
   font-weight: 200;
   padding: 2%;
-  color: #fc9226;
-  background-color: #fc9226;
-  background-image: linear-gradient(to left, #f9c775 0%, #fc9226 15%);
+  color: white;
+  background-color: white;
+  background-image: linear-gradient(to left, #f9c775 0%, white 15%);
   background-position: -64px top;
   background-repeat: repeat;
   -webkit-background-clip: text;
@@ -132,7 +132,7 @@ h1 {
 h2 {
   padding: 3%;
   display: inline-block;
-  color: #fc9226;
+  color: white;
   font-size: 2em;
   font-weight: 200;
   margin-top: 0;
@@ -149,13 +149,13 @@ h2 {
 
 .plain-text, .shows p, .about p {
   font-size: 1rem;
-  font-family: Palatino;
+  font-family: "Lora", serif;
   line-height: 1.5em;
   text-align: justify; }
 
 .list-text, .shows li, .about li {
   font-size: 1rem;
-  font-family: Palatino;
+  font-family: "Lora", serif;
   line-height: 1.5em;
   text-align: start; }
 
@@ -166,7 +166,7 @@ h2 {
     background-position: 12.5rem top; } }
 /*SHOWS*/
 .shows {
-  color: #fc9226;
+  color: white;
   width: 70%;
   margin: 0 auto; }
   .shows h3 {
@@ -208,13 +208,13 @@ h2 {
 
 .plain-text, .shows p, .about p {
   font-size: 1rem;
-  font-family: Palatino;
+  font-family: "Lora", serif;
   line-height: 1.5em;
   text-align: justify; }
 
 .list-text, .shows li, .about li {
   font-size: 1rem;
-  font-family: Palatino;
+  font-family: "Lora", serif;
   line-height: 1.5em;
   text-align: start; }
 
@@ -232,7 +232,7 @@ h2 {
       flex-direction: column; } }
 .about h4 {
   font-size: 2em;
-  color: #fc9226;
+  color: white;
   text-align: center;
   font-weight: normal;
   margin-top: 5%; }
@@ -253,7 +253,7 @@ h2 {
       width: auto; } }
 
 .about-text {
-  color: #fc9226;
+  color: white;
   font-size: 2em;
   background-color: rgba(0, 0, 0, 0.2);
   width: 50%;
@@ -310,13 +310,13 @@ h2 {
 
 .plain-text, .shows p, .about p {
   font-size: 1rem;
-  font-family: Palatino;
+  font-family: "Lora", serif;
   line-height: 1.5em;
   text-align: justify; }
 
 .list-text, .shows li, .about li {
   font-size: 1rem;
-  font-family: Palatino;
+  font-family: "Lora", serif;
   line-height: 1.5em;
   text-align: start; }
 
@@ -343,7 +343,7 @@ h2 {
       width: auto; } }
 
 .contact-details {
-  color: #fc9226;
+  color: white;
   font-size: 2em;
   background-color: rgba(0, 0, 0, 0.2);
   width: 50%;
@@ -365,7 +365,7 @@ h2 {
     font-size: 0.7em; }
 
 a, a:hover {
-  color: #fc9226;
+  color: white;
   text-decoration: none; }
 
 .fa, .fab {
@@ -385,17 +385,25 @@ a, a:hover {
 body {
   margin: 0 auto;
   height: 100vh;
-  font-family: 'Charm', serif;
+  font-family: "Cinzel", serif;
   background: url("../images/for_web/violet_wall.jpg") no-repeat top center fixed;
   background-size: cover; }
 
-main, section, div {
+main,
+section,
+div {
   margin-top: 3%; }
 
 .content {
   height: 100vh; }
 
-.home, .shows, .gallery, .foto, .video, .about, .contact {
+.home,
+.shows,
+.gallery,
+.foto,
+.video,
+.about,
+.contact {
   display: none; }
 
 .active {

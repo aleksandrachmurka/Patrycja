@@ -1,39 +1,48 @@
 /*BODY, MAIN*/
 
 body {
-	margin: 0 auto;
-	height: 100vh;
-	font-family: 'Charm', serif;
-	background: url('../images/for_web/violet_wall.jpg') no-repeat top center fixed;
-	background-size: cover;
+  margin: 0 auto;
+  height: 100vh;
+  font-family: "Cinzel", serif;
+  background: url("../images/for_web/violet_wall.jpg") no-repeat top center
+    fixed;
+  background-size: cover;
 }
 
-main, section, div {
-	margin-top: 3%;
+main,
+section,
+div {
+  margin-top: 3%;
 }
 
 .content {
-	height: 100vh;
+  height: 100vh;
 }
 
-.home, .shows, .gallery, .foto, .video, .about, .contact {
-	display: none;
+.home,
+.shows,
+.gallery,
+.foto,
+.video,
+.about,
+.contact {
+  display: none;
 }
 
 .active {
-	display: block;
+  display: block;
 }
 
 .overlay {
-	display: inline-block;
-	text-align: center;
-	margin-left: 5%;
+  display: inline-block;
+  text-align: center;
+  margin-left: 5%;
 
-	@media #{$desktop} {
-		margin-top: 10%
-	}
+  @media #{$desktop} {
+    margin-top: 10%;
+  }
 
-	@media #{$mobile} {
-		display: none;
-	}
+  @media #{$mobile} {
+    display: none;
+  }
 }
