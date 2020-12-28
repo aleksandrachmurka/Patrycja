@@ -18,13 +18,3 @@
   line-height: 1.5em;
   text-align: start;
 }
-
-@keyframes shimmer {
-  0% {
-    background-position: -4rem top;
-  }
-
-  100% {
-    background-position: 12.5rem top;
-  }
-}

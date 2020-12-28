@@ -3,75 +3,74 @@
 /*CONTACT*/
 
 .contact-container {
-	margin-top: 3%;
-	@extend .flex-row;
+  margin-top: 3%;
+  @extend .flex-row;
 
-	@media #{$mobile} {
-		flex-direction: column;
-	}
+  @media #{$mobile} {
+    flex-direction: column;
+  }
 }
 
 .contact-image {
-	display: inline-block;
-	text-align: center;
-	width: 50%;
-	margin-left: 10%;
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  margin-left: 10%;
 
-	@media #{$mobile} {
-		margin: 0 auto;
-		width: auto;
-	}
+  @media #{$mobile} {
+    margin: 0 auto;
+    width: auto;
+  }
 }
 
 .contact-details {
-	color: $base-color;
-	font-size: 2em;
-	background-color: rgba(0, 0, 0, 0.2);
-	width: 50%;
-	margin-right: 10%;
-	height: 40%;
-	font-weight: 100;
-	text-align: center;
+  color: $base-color;
+  font-size: 2em;
+  width: 50%;
+  margin-right: 10%;
+  height: 40%;
+  font-weight: 100;
+  text-align: center;
 
-	@media #{$desktop} {
-		font-size: 2em;
-		margin: 0 auto;
-	}
+  @media #{$desktop} {
+    font-size: 2em;
+    margin: 0 auto;
+  }
 
-	@media #{$mobile} {
-		width: auto;
-	}
+  @media #{$mobile} {
+    width: auto;
+  }
 
-	h2 {
-		font-size: 1.5em;
-	}
+  h2 {
+    font-size: 1.5em;
+  }
 
-	p {
-		margin-top: 0;
-		font-size: 0.7em;
-	}
-
+  p {
+    margin-top: 0;
+    font-size: 0.7em;
+  }
 }
 
-
-a, a:hover {
-	color: $base-color;
-	text-decoration: none;
+a,
+a:hover {
+  color: $base-color;
+  text-decoration: none;
 }
 
-.fa, .fab {
-	min-height: 25px;
-	font-weight: 800;
+.fa,
+.fab {
+  min-height: 25px;
+  font-weight: 800;
 }
 
 .fab[class*="facebook"] {
-	margin-right: 5%;
+  margin-right: 5%;
 }
 
 .fab[class*="youtube"] {
-	margin-left: 5%;
+  margin-left: 5%;
 }
 
 .fab:hover {
-	transform: scale(1.5);
+  transform: scale(1.3);
 }

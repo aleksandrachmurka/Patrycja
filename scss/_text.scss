@@ -3,18 +3,9 @@
 h1 {
   display: inline-block;
   font-size: 5.5em;
+  color: $base-color;
   font-weight: 200;
-	padding: 2%;
-	color: $base-color;
-  background-color: $base-color;
-  background-image: linear-gradient(to left, rgb(249, 199, 117) 0%, $base-color 15%);
-  background-position: -64px top;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: shimmer 2.2s 1s infinite;
-  -webkit-background-size: 13rem 20%;
-  //after pseudoelement with position absolute, transform translate x instead of background-position
+  padding: 2%;
 
   @media #{$desktop} {
     font-size: 4em;
@@ -26,13 +17,13 @@ h1 {
 }
 
 h2 {
-	padding: 3%;
-	display: inline-block;
-	color: $base-color;
-	font-size: 2em;
-	font-weight: 200;
-	margin-top: 0;
-	margin-bottom: 0;
+  padding: 3%;
+  display: inline-block;
+  color: $base-color;
+  font-size: 2em;
+  font-weight: 200;
+  margin-top: 0;
+  margin-bottom: 0;
 
   @media #{desktop} {
     font-size: 2em;
