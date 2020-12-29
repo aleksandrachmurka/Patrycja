@@ -8,18 +8,6 @@
   justify-content: space-around;
   align-items: center; }
 
-.plain-text, .shows p, .about p {
-  font-size: 1rem;
-  font-family: "Lora", serif;
-  line-height: 1.5em;
-  text-align: justify; }
-
-.list-text, .shows li, .about li {
-  font-size: 1rem;
-  font-family: "Lora", serif;
-  line-height: 1.5em;
-  text-align: start; }
-
 /*HEADER*/
 .header {
   width: 100%;
@@ -127,23 +115,23 @@ h2 {
     h2 {
       font-size: 2em; } }
 
-.flex-row, .contact-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center; }
-
 .plain-text, .shows p, .about p {
   font-size: 1rem;
   font-family: "Lora", serif;
   line-height: 1.5em;
-  text-align: justify; }
+  text-align: left; }
 
 .list-text, .shows li, .about li {
   font-size: 1rem;
   font-family: "Lora", serif;
   line-height: 1.5em;
   text-align: start; }
+
+.flex-row, .contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
 
 /*SHOWS*/
 .shows {
@@ -181,17 +169,37 @@ h2 {
   .show-section-container__text:nth-of-type(2) {
     margin-left: 5%; }
 
-.flex-row, .contact-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center; }
+/*TEXT*/
+h1 {
+  display: inline-block;
+  font-size: 5.5em;
+  color: white;
+  font-weight: 200;
+  padding: 2%; }
+  @media screen and (max-width: 930px) {
+    h1 {
+      font-size: 4em; } }
+  @media screen and (max-width: 420px) {
+    h1 {
+      font-size: 2em; } }
+
+h2 {
+  padding: 3%;
+  display: inline-block;
+  color: white;
+  font-size: 2em;
+  font-weight: 200;
+  margin-top: 0;
+  margin-bottom: 0; }
+  @media desktop {
+    h2 {
+      font-size: 2em; } }
 
 .plain-text, .shows p, .about p {
   font-size: 1rem;
   font-family: "Lora", serif;
   line-height: 1.5em;
-  text-align: justify; }
+  text-align: left; }
 
 .list-text, .shows li, .about li {
   font-size: 1rem;
@@ -282,18 +290,6 @@ h2 {
   flex-direction: row;
   justify-content: space-around;
   align-items: center; }
-
-.plain-text, .shows p, .about p {
-  font-size: 1rem;
-  font-family: "Lora", serif;
-  line-height: 1.5em;
-  text-align: justify; }
-
-.list-text, .shows li, .about li {
-  font-size: 1rem;
-  font-family: "Lora", serif;
-  line-height: 1.5em;
-  text-align: start; }
 
 /*CONTACT*/
 .contact-container {
